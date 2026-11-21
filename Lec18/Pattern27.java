@@ -8,7 +8,7 @@ public  class Pattern27 {
         int n = 5;
         int space = n-1;
         int star = 1;
-        
+      
         int row = 1;
         while (row<=n) {
             // Space
@@ -20,10 +20,10 @@ public  class Pattern27 {
 
             // Number
             int nCol= 1;
-            int num = 1;  
+            int num = row; 
             while (nCol<= star ) {
                 System.out.print(num +"\t");
-                if(nCol<row){
+                if(nCol<star/2+1){
                      num++;
                 }else{
                     num--;
@@ -37,6 +37,7 @@ public  class Pattern27 {
             space--;
             star+=2;
             row++;
+            num++;
 
         }
      }
